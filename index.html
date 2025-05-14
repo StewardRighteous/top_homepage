@@ -3,7 +3,257 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>HomePage</title>
   </head>
-  <body></body>
+  <body>
+    <div class="author-details">
+      <div class="display-image">
+        <img
+          srcset="
+            images/pp1-640px.jpg   640w,
+            images/pp1-1280px.jpg 1280w,
+            images/pp1-max.jpg    2000w
+          "
+          sizes="70vw"
+          src="images/pp1-640px.jpg"
+          alt=""
+        />
+        <h1>Robin Starvase</h1>
+      </div>
+      <div class="about-me">
+        <h1>About ME</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
+          veritatis vel laudantium quam earum est tempore consequatur porro
+          voluptatibus? Eaque ut fugiat repudiandae dolores. Vero sit animi
+          tenetur minus nam eos nesciunt nulla aut consectetur obcaecati tempora
+          iste maxime itaque ratione odit beatae fuga fugit, amet libero?
+          Suscipit, fugiat magni!
+        </p>
+        <a href=""><img src="icons/github-original.svg" alt="github page" /></a>
+        <a href=""
+          ><img src="icons/linkedin-original.svg" alt="linked in page"
+        /></a>
+        <a href=""
+          ><img src="icons/twitter-original.svg" alt="twitter page"
+        /></a>
+      </div>
+    </div>
+    <div class="author-work">
+      <h1>My Work</h1>
+      <div class="project-cards">
+        <div class="project-card">
+          <picture>
+            <source srcset="images/battleship.webp" />
+            <img src="images/battleship.png" alt="Battleship Project" />
+          </picture>
+          <div class="project-details">
+            <div class="project-header">
+              <h2>BattleShip</h2>
+              <a href=""
+                ><img
+                  src="icons/github-original.svg"
+                  alt="Battle Ship project Source Code"
+              /></a>
+              <a href=""
+                ><img
+                  src="icons/open-in-new.svg"
+                  alt="Battle Ship Live website"
+              /></a>
+            </div>
+            <div class="project-description">
+              <p>
+                Battleship (also known as Battleships) is a strategy type
+                guessing game for two players. The locations of the fleets are
+                concealed from the other player. Players alternate turns calling
+                "shots" at the other player's ships, and the objective of the
+                game is to destroy the opposing player's fleet.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <picture>
+            <source srcset="images/admin.webp" />
+            <img src="images/admin.png" alt="Admin Dashboard Project" />
+          </picture>
+          <div class="project-details">
+            <div class="project-header">
+              <h2>Admin Dashboard</h2>
+              <a href=""
+                ><img
+                  src="icons/github-original.svg"
+                  alt="Admin Dashboard Project source code"
+              /></a>
+              <a href=""
+                ><img
+                  src="icons/open-in-new.svg"
+                  alt="Admin Dashboard Project live website"
+              /></a>
+            </div>
+            <div class="project-description">
+              <p>
+                This is a simple Admin Dashboard that is commonly seen in many
+                Websites. (This is part of The Odin Project Assignments)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <picture>
+            <source srcset="images/restaurant.webp" />
+            <img src="images/restaurant.png" alt="Restaurant Menu Project" />
+          </picture>
+          <div class="project-details">
+            <div class="project-header">
+              <h2>Restaurant Menu</h2>
+              <a href=""
+                ><img
+                  src="icons/github-original.svg"
+                  alt="Restaurant Menu Project Source Code"
+              /></a>
+              <a href=""
+                ><img
+                  src="icons/open-in-new.svg"
+                  alt="Restaurant Menu Project Live Preview"
+              /></a>
+            </div>
+            <div class="project-description">
+              <p>
+                This is a website that will give details about a Restaurant
+                called "Flavours and Flames". The website contains three
+                sections which are Home, Menu and About. Home references to the
+                details of the restaurant. Menu offers the different foods in
+                the restaurant. About refers to the further mottos of the
+                restaurant.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <picture>
+            <source srcset="images/signup.webp" />
+            <img src="images/signup.png" alt="Signup Page Project" />
+          </picture>
+          <div class="project-details">
+            <div class="project-header">
+              <h2>Signup Page</h2>
+              <a href=""
+                ><img
+                  src="icons/github-original.svg"
+                  alt="Signup Page Project Source Code"
+              /></a>
+              <a href=""
+                ><img
+                  src="icons/open-in-new.svg"
+                  alt="Signup Page Project Live Preview"
+              /></a>
+            </div>
+            <div class="project-description">
+              <p>
+                This is a sample sign-up form for an imaginary company. It is
+                part of the Odin project curriculum
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <picture>
+            <source srcset="images/tic-tac-toe.webp" />
+            <img src="images/tic-tac-toe.png" alt="tic tac toe Project" />
+          </picture>
+          <div class="project-details">
+            <div class="project-header">
+              <h2>Tic Tac Toe</h2>
+              <a href=""
+                ><img
+                  src="icons/github-original.svg"
+                  alt="tic tac toe Project Source Code"
+              /></a>
+              <a href=""
+                ><img
+                  src="icons/open-in-new.svg"
+                  alt="tic tac toe Project Live Preview"
+              /></a>
+            </div>
+            <div class="project-description">
+              <p>
+                This is a sample sign-up form for an imaginary company. It is
+                part of the Odin project curriculum
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <picture>
+            <source
+              srcset="images/todo-dark.webp"
+              media="prefers-color-scheme:dark"
+            />
+            <source srcset="images/todo-light.webp" />
+            <img src="images/todo-light.png" alt="Todo List Project" />
+          </picture>
+          <div class="project-details">
+            <div class="project-header">
+              <h2>Todo List</h2>
+              <a href=""
+                ><img
+                  src="icons/github-original.svg"
+                  alt="Todo List Project Source Code"
+              /></a>
+              <a href=""
+                ><img
+                  src="icons/open-in-new.svg"
+                  alt="Todo List Project Live Preview"
+              /></a>
+            </div>
+            <div class="project-description">
+              <p>
+                Simple todo list app that is similarto Google tasks. It helps to
+                add todo to each project and maintain it. Also has starred and
+                sorting options.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="author-contact">
+      <div class="contact-details">
+        <h1>Contact Me</h1>
+        <p>
+          Please get in touch if you think our work could be mutually beneficial
+        </p>
+        <p>1234 Random Road, Random Town, California 12345</p>
+        <div class="contact-ids">
+          <img src="icons/phone.svg" alt="" />
+          <p>555-555-5555</p>
+          <img src="icons/email-outline.svg" alt="" />
+          <p>iamnotarealperson@gmail.com</p>
+        </div>
+        <div class="social-media">
+          <a href=""
+            ><img src="icons/github-original.svg" alt="github page"
+          /></a>
+          <a href=""
+            ><img src="icons/linkedin-original.svg" alt="linked in page"
+          /></a>
+          <a href=""
+            ><img src="icons/twitter-original.svg" alt="twitter page"
+          /></a>
+        </div>
+      </div>
+      <img
+        srcset="
+          images/pp2-640px.jpg   640w,
+          images/pp2-1280px.jpg 1280w,
+          images/pp2-max.jpg    2000w
+        "
+        sizes="70vw"
+        src="images/pp2-640px.jpg"
+        alt=""
+      />
+    </div>
+  </body>
 </html>
