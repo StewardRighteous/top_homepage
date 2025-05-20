@@ -89,6 +89,12 @@ img[src$=".svg"] {
   height: 32px;
 }
 
+img[src$=".svg"]:hover:active,
+img[src$=".webp"]:hover:active,
+img[src$=".png"]:hover:active {
+  transform: scale(1.2);
+}
+
 body {
   background-color: var(--background);
   color: var(--text);
@@ -135,6 +141,11 @@ body {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  margin: 4px;
+}
+
+.about-me h1 {
+  font-family: var(--font2);
 }
 
 .about-me .icons {
@@ -148,6 +159,41 @@ body {
 
 .about-me .icons a:nth-child(2) img {
   filter: invert(0);
+}
+
+.author-work {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  margin: 8px;
+  font-family: var(--font2);
+}
+
+.project-cards {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 8px;
+}
+
+.project-card {
+  border-radius: 8px;
+  font-family: var(--font1);
+  background-color: var(--primary);
+  padding: 8px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.project-card .project-details .project-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-card .project-details .project-header .icons {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 4px;
 }
 
 @media (prefers-color-scheme: light) {
