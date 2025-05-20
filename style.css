@@ -266,7 +266,7 @@ body {
   .author-details .about-me p {
     font-weight: 500;
     line-height: 1em;
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   .author-details .about-me .icons img {
@@ -277,7 +277,26 @@ body {
     grid-area: work;
   }
 
+  .author-work .project-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .author-work .project-card h2 {
+    font-size: 2em;
+  }
+
+  .author-work .project-card p {
+    font-size: 1.1em;
+  }
+
   .author-contact {
     grid-area: contact;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-details{
+    justify-content: center;
   }
 }
