@@ -196,6 +196,29 @@ body {
   gap: 4px;
 }
 
+.author-contact .contact-details {
+  margin: 8px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8px;
+}
+
+.author-contact .contact-ids .phone,
+.author-contact .contact-ids .email,
+.author-contact .social-media {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.author-contact img[src$=".svg"] {
+  filter: invert(1);
+}
+.author-contact .social-media a:nth-child(2) img {
+  filter: invert(0);
+}
+
 @media (prefers-color-scheme: light) {
   .about-me .icons img {
     filter: invert(0);
@@ -207,5 +230,8 @@ body {
   }
   .about-me p {
     font-weight: 400;
+  }
+  .author-contact img[src$=".svg"] {
+    filter: invert(0);
   }
 }
