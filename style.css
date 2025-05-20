@@ -236,7 +236,7 @@ body {
   filter: invert(0);
 }
 
-@media (min-width: 600px) and (max-width: 1000px) {
+@media (min-width: 1000px) {
   .author-details {
     display: grid;
     grid-template-columns: 400px 400px;
@@ -291,7 +291,7 @@ body {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1500px) {
   .author-details {
     display: grid;
     grid-template-columns: 500px 500px;
