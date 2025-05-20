@@ -108,6 +108,7 @@ body {
   flex-flow: column nowrap;
   position: relative;
   gap: 4px;
+  overflow: hidden;
 }
 
 .author-details .display-image {
@@ -127,10 +128,10 @@ body {
 .decoration {
   position: absolute;
   z-index: -1;
-  width: calc(100vw * 2);
-  height: calc(150vh / 1.5);
   background-color: var(--primary);
   rotate: 354deg;
+  width: calc(100vw * 2);
+  height: calc(150vh / 1.5);
   transform: translateY(calc(100vh / -2));
 }
 
@@ -233,5 +234,50 @@ body {
   }
   .author-contact img[src$=".svg"] {
     filter: invert(0);
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "details"
+      "work"
+      "contact";
+  }
+
+  .author-details {
+    grid-area: details;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .author-details .about-me {
+    background-color: var(--text);
+    color: var(--background);
+    padding: 20px 12px;
+    border-radius: 8px;
+  }
+
+  .author-details .about-me h1 {
+    font-size: 2rem;
+  }
+
+  .author-details .about-me p {
+    font-weight: 500;
+    line-height: 1em;
+    font-size: 1.5em;
+  }
+
+  .author-details .about-me .icons img {
+    filter: invert(0);
+  }
+
+  .author-work {
+    grid-area: work;
+  }
+
+  .author-contact {
+    grid-area: contact;
   }
 }
