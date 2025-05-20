@@ -3,22 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>HomePage</title>
   </head>
   <body>
     <div class="author-details">
+      <div class="decoration"></div>
       <div class="display-image">
-        <img
-          srcset="
-            images/pp1-640px.jpg   640w,
-            images/pp1-1280px.jpg 1280w,
-            images/pp1-max.jpg    2000w
-          "
-          sizes="70vw"
-          src="images/pp1-640px.jpg"
-          alt=""
-        />
+        <picture>
+          <source srcset="images/pp1-640px.jpg" media="(max-width:600px)" />
+          <source srcset="images/pp1-1280px.jpg" media="(max-width:1200px)" />
+          <img src="images/pp1-max.jpg" alt="" />
+        </picture>
         <h1>Robin Starvase</h1>
       </div>
       <div class="about-me">
@@ -244,16 +240,11 @@
           /></a>
         </div>
       </div>
-      <img
-        srcset="
-          images/pp2-640px.jpg   640w,
-          images/pp2-1280px.jpg 1280w,
-          images/pp2-max.jpg    2000w
-        "
-        sizes="70vw"
-        src="images/pp2-640px.jpg"
-        alt=""
-      />
+      <picture>
+        <source srcset="images/pp2-640px.jpg" media="(max-width:600px)" />
+        <source srcset="images/pp2-1280px.jpg" media="(max-width:1200px)" />
+        <img src="images/pp2-max.jpg" alt="" />
+      </picture>
     </div>
   </body>
 </html>

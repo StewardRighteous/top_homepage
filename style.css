@@ -98,6 +98,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
+  position: relative;
+  gap: 4px;
 }
 
 .author-details .display-image {
@@ -105,8 +107,21 @@ body {
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
+  font-family: Montserrat;
+  font-weight: 700;
 }
+
 .author-details .display-image img {
   border-radius: 50%;
-  border: 4px solid black;
+  border: 4px solid var(--text);
+}
+
+.decoration {
+  position: absolute;
+  z-index: -1;
+  width: calc(100vw * 2);
+  height: calc(150vh / 1.5);
+  background-color: var(--primary);
+  rotate: 354deg;
+  transform: translateY(calc(100vh / -2));
 }
