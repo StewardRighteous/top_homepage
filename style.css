@@ -70,6 +70,8 @@ h6 {
   --primary: hsl(204, 40%, 53%);
   --secondary: hsl(275, 40%, 73%);
   --accent: hsl(299, 41%, 64%);
+  --font1: "Source Serif4";
+  --font2: "Montserrat";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -107,7 +109,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
-  font-family: Montserrat;
+  font-family: var(--font2);
   font-weight: 700;
 }
 
@@ -124,4 +126,40 @@ body {
   background-color: var(--primary);
   rotate: 354deg;
   transform: translateY(calc(100vh / -2));
+}
+
+.author-details .about-me {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font1);
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.about-me .icons {
+  display: flex;
+  gap: 8px;
+}
+
+.about-me .icons img {
+  filter: invert(1);
+}
+
+.about-me .icons a:nth-child(2) img {
+  filter: invert(0);
+}
+
+@media (prefers-color-scheme: light) {
+  .about-me .icons img {
+    filter: invert(0);
+  }
+  .decoration {
+    width: calc(100vw);
+    height: 90vh;
+    rotate: 0deg;
+  }
+  .about-me p {
+    font-weight: 400;
+  }
 }
